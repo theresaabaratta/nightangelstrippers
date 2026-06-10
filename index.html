@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Night Angels | High Class Strippers Service – Nationwide Party Entertainment</title>
+<meta name="description" content="Night Angels is a high class strippers service booking professional female entertainers for bachelor parties, birthdays and private events in 18+ states nationwide. Call to book your party.">
+<link rel="canonical" href="https://nightangelstrippers.com/">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --na-black:#0b0a0c;
+  --na-panel:#141216;
+  --na-panel-2:#1b181d;
+  --na-red:#e01b2a;
+  --na-red-deep:#8f0f19;
+  --na-white:#f5f2f4;
+  --na-grey:#9b939e;
+  --na-line:rgba(245,242,244,.10);
+}
+html{scroll-behavior:smooth}
+body{
+  background-color:var(--na-black);
+  /* subtle damask-style texture echoing the original background */
+  background-image:
+    radial-gradient(ellipse at 15% 0%, rgba(224,27,42,.06), transparent 45%),
+    radial-gradient(ellipse at 85% 100%, rgba(224,27,42,.05), transparent 45%),
+    repeating-linear-gradient(135deg, rgba(255,255,255,.012) 0 2px, transparent 2px 14px);
+  color:var(--na-white);
+  font-family:'Jost',sans-serif;
+  font-weight:300;
+  letter-spacing:.01em;
+}
+h1,h2,h3,.display-font{font-family:'Marcellus',serif;letter-spacing:.04em}
+a{color:var(--na-white)}
+.text-grey{color:var(--na-grey)}
+.text-red{color:var(--na-red)}
+
+/* ---------- Nav ---------- */
+.navbar{
+  background:rgba(11,10,12,.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--na-line);
+}
+.navbar .nav-link{
+  font-family:'Jost',sans-serif;
+  font-weight:400;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  font-size:.78rem;
+  color:var(--na-grey);
+  padding:.9rem 1.1rem;
+}
+.navbar .nav-link:hover,.navbar .nav-link:focus{color:var(--na-white)}
+.brand-mark{font-family:'Marcellus',serif;font-size:1.45rem;letter-spacing:.06em;text-decoration:none}
+.brand-mark .w{color:var(--na-white)}
+.brand-mark .r{color:var(--na-red);text-shadow:0 0 18px rgba(224,27,42,.55)}
+.nav-phone{
+  border:1px solid var(--na-red);
+  color:var(--na-white);
+  border-radius:2px;
+  padding:.45rem 1.1rem;
+  font-size:.8rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  text-decoration:none;
+  transition:background .2s ease;
+}
+.nav-phone:hover{background:var(--na-red);color:#fff}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;
+  padding-top:5.5rem;
+}
+.hero-logo{
+  text-align:center;
+  padding:2.2rem 1rem 1.4rem;
+}
+.hero-logo h1{
+  font-size:clamp(2.6rem,7vw,4.6rem);
+  margin:0;
+  line-height:1;
+}
+.hero-logo h1 .w{color:var(--na-white);text-shadow:0 0 24px rgba(255,255,255,.25)}
+.hero-logo h1 .r{color:var(--na-red);text-shadow:0 0 26px rgba(224,27,42,.6)}
+.hero-rule{
+  width:min(520px,80%);
+  height:1px;
+  margin:1.1rem auto .9rem;
+  background:linear-gradient(90deg,transparent,var(--na-white),transparent);
+}
+.hero-tag{
+  font-family:'Jost',sans-serif;
+  font-weight:300;
+  letter-spacing:.42em;
+  text-transform:uppercase;
+  color:var(--na-grey);
+  font-size:clamp(.72rem,1.8vw,1.05rem);
+}
+.hero-photo{
+  position:relative;
+  max-width:1080px;
+  margin:1.5rem auto 0;
+  border:1px solid var(--na-line);
+  box-shadow:0 30px 80px rgba(0,0,0,.65);
+}
+.hero-photo img{width:100%;display:block}
+.hero-photo .veil{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 55%,rgba(11,10,12,.85) 100%);
+}
+.hero-cta{
+  position:absolute;left:0;right:0;bottom:1.6rem;
+  display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;
+}
+.btn-na{
+  background:var(--na-red);
+  color:#fff;
+  border:1px solid var(--na-red);
+  border-radius:2px;
+  font-family:'Jost',sans-serif;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-size:.8rem;
+  padding:.75rem 1.7rem;
+}
+.btn-na:hover{background:var(--na-red-deep);border-color:var(--na-red-deep);color:#fff}
+.btn-na-ghost{
+  background:rgba(11,10,12,.55);
+  color:var(--na-white);
+  border:1px solid rgba(245,242,244,.45);
+  border-radius:2px;
+  font-family:'Jost',sans-serif;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-size:.8rem;
+  padding:.75rem 1.7rem;
+}
+.btn-na-ghost:hover{border-color:#fff;color:#fff;background:rgba(11,10,12,.8)}
+
+/* hero quick-cities strip overlaid on the photo */
+.hero-cities{
+  position:absolute;top:1.1rem;left:0;right:0;
+  display:flex;justify-content:center;flex-wrap:wrap;gap:.4rem .55rem;
+  padding:0 1rem;
+}
+.hero-cities span{
+  background:rgba(11,10,12,.72);
+  border:1px solid rgba(245,242,244,.22);
+  color:var(--na-white);
+  font-size:.68rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  padding:.3rem .7rem;
+  border-radius:2px;
+}
+.hero-cities span b{color:var(--na-red);font-weight:600}
+
+/* ---------- Section scaffolding ---------- */
+.section{padding:4.5rem 0}
+.eyebrow{
+  display:inline-block;
+  font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--na-red);
+  margin-bottom:.8rem;
+}
+.section h2{font-size:clamp(1.7rem,4vw,2.5rem);margin-bottom:1rem}
+.lead-na{color:var(--na-grey);font-weight:300;max-width:760px}
+
+/* ---------- Services / Rates cards ---------- */
+.card-na{
+  background:var(--na-panel);
+  border:1px solid var(--na-line);
+  border-radius:3px;
+  height:100%;
+  padding:1.8rem 1.6rem;
+  transition:border-color .2s ease, transform .2s ease;
+}
+.card-na:hover{border-color:rgba(224,27,42,.5);transform:translateY(-3px)}
+.card-na h3{font-size:1.15rem;margin-bottom:.6rem}
+.card-na p{color:var(--na-grey);font-size:.95rem;margin:0}
+.rate-price{font-family:'Marcellus',serif;font-size:2rem;color:var(--na-white)}
+.rate-price small{font-family:'Jost',sans-serif;color:var(--na-grey);font-size:.8rem;letter-spacing:.1em}
+
+/* ---------- Nationwide directory (signature section) ---------- */
+.directory{
+  background:var(--na-panel);
+  border-top:1px solid var(--na-line);
+  border-bottom:1px solid var(--na-line);
+}
+.choose-state{
+  text-align:center;margin-bottom:2.6rem;position:relative;
+}
+.choose-state::before{
+  content:"";display:block;width:1px;height:42px;
+  background:linear-gradient(180deg,transparent,var(--na-red));
+  margin:0 auto .9rem;
+}
+.state-col{
+  border-left:1px solid var(--na-line);
+  padding-left:1.4rem;
+}
+@media (max-width:767.98px){.state-col{border-left:0;padding-left:.25rem}}
+.state-block{margin-bottom:1.9rem}
+.state-name{
+  display:inline-block;
+  background:var(--na-red);
+  color:#fff;
+  font-family:'Jost',sans-serif;
+  font-weight:600;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  font-size:.82rem;
+  padding:.35rem .8rem;
+  border-radius:2px;
+  margin-bottom:.55rem;
+}
+.state-cities{
+  color:var(--na-grey);
+  font-size:.92rem;
+  line-height:1.85;
+}
+.state-cities span{white-space:nowrap}
+.state-cities span + span::before{
+  content:"·";
+  color:var(--na-red);
+  margin:0 .5rem;
+}
+
+/* ---------- FAQ ---------- */
+.accordion-na .accordion-item{
+  background:var(--na-panel);
+  border:1px solid var(--na-line);
+  color:var(--na-white);
+}
+.accordion-na .accordion-button{
+  background:var(--na-panel);
+  color:var(--na-white);
+  font-family:'Jost',sans-serif;
+  font-weight:500;
+  letter-spacing:.04em;
+  box-shadow:none;
+}
+.accordion-na .accordion-button:not(.collapsed){color:var(--na-red)}
+.accordion-na .accordion-button::after{filter:invert(1) grayscale(1)}
+.accordion-na .accordion-body{color:var(--na-grey);font-size:.95rem}
+
+/* ---------- Contact ---------- */
+.contact-band{
+  background:
+    radial-gradient(ellipse at 50% 120%, rgba(224,27,42,.18), transparent 60%),
+    var(--na-panel-2);
+  border-top:1px solid var(--na-line);
+  text-align:center;
+  padding:4.5rem 1rem;
+}
+.contact-band .phone{
+  font-family:'Marcellus',serif;
+  font-size:clamp(1.8rem,5vw,3rem);
+  color:var(--na-white);
+  text-decoration:none;
+}
+.contact-band .phone:hover{color:var(--na-red)}
+
+footer{
+  border-top:1px solid var(--na-line);
+  padding:2.2rem 1rem;
+  color:var(--na-grey);
+  font-size:.82rem;
+}
+footer a{color:var(--na-grey);text-decoration:none}
+footer a:hover{color:var(--na-white)}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .card-na,.card-na:hover{transition:none;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+  <div class="container">
+    <a class="brand-mark" href="#top"><span class="w">NIGHT</span><span class="r">ANGELS</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#girls">Our Girls</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#rates">Rates</a></li>
+        <li class="nav-item"><a class="nav-link" href="#locations">Locations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+      </ul>
+      <a class="nav-phone d-none d-lg-inline-block" href="tel:+18005550199">Call (800) 555-0199</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <div class="hero-logo">
+    <h1><span class="w">NIGHT</span><span class="r">ANGELS</span></h1>
+    <div class="hero-rule"></div>
+    <div class="hero-tag">High Class Strippers Service</div>
+  </div>
+
+  <div class="hero-photo">
+    <!-- Drop your licensed hero photo at images/hero-angel.jpg (recommended ~1920x1080, focal point center-right) -->
+    <img src="images/hero-angel.jpg" alt="Night Angels professional female entertainer posing in studio lighting" width="1920" height="1080">
+    <div class="veil"></div>
+
+    <!-- Popular cities strip layered over the photo -->
+    <div class="hero-cities" aria-label="Popular cities we serve">
+      <span><b>Phoenix</b></span>
+      <span><b>Los Angeles</b></span>
+      <span><b>Denver</b></span>
+      <span><b>Miami</b></span>
+      <span><b>Atlanta</b></span>
+      <span><b>Chicago</b></span>
+      <span><b>New York</b></span>
+      <span><b>New Orleans</b></span>
+      <span><b>Charlotte</b></span>
+      <span><b>Philadelphia</b></span>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#locations" class="btn btn-na-ghost">Choose Your State</a>
+      <a href="tel:+18005550199" class="btn btn-na">Book Your Party</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= OUR GIRLS / ABOUT ================= -->
+<section class="section" id="girls">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="eyebrow">Our Girls</span>
+        <h2>Professional Entertainers, Coast to Coast</h2>
+        <p class="lead-na">Night Angels books experienced, professional female entertainers for private parties nationwide. Every performer on our roster is vetted, reliable, and knows how to read a room — bringing the energy of a high-end show straight to your suite, house, or venue.</p>
+        <p class="lead-na">From Phoenix to Philadelphia, our booking team matches your party with available entertainers in your city, confirms the details, and handles everything by phone so the night runs exactly the way you planned it.</p>
+        <a href="tel:+18005550199" class="btn btn-na mt-3">Check Availability</a>
+      </div>
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <!-- Swap in your licensed roster photos -->
+          <div class="col-6"><img src="images/angel-1.jpg" class="img-fluid border border-secondary-subtle" alt="Night Angels entertainer portrait" loading="lazy"></div>
+          <div class="col-6"><img src="images/angel-2.jpg" class="img-fluid border border-secondary-subtle" alt="Night Angels entertainer portrait" loading="lazy"></div>
+          <div class="col-6"><img src="images/angel-3.jpg" class="img-fluid border border-secondary-subtle" alt="Night Angels entertainer portrait" loading="lazy"></div>
+          <div class="col-6"><img src="images/angel-4.jpg" class="img-fluid border border-secondary-subtle" alt="Night Angels entertainer portrait" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="section pt-0" id="services">
+  <div class="container">
+    <span class="eyebrow">Services</span>
+    <h2>Entertainment for Every Occasion</h2>
+    <p class="lead-na mb-4">One call covers the whole booking — date, time, location, number of entertainers, and show length.</p>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card-na">
+          <h3>Bachelor Parties</h3>
+          <p>The classic send-off. Single performers or duo shows for hotel suites, rentals, and private residences.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card-na">
+          <h3>Birthday Parties</h3>
+          <p>Milestone birthdays deserve a show. Surprise the guest of honor with a performance they won't forget.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card-na">
+          <h3>Poker &amp; Game Nights</h3>
+          <p>Add cocktail-style entertainment or a featured show to guys' night, fantasy drafts, and fight nights.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card-na">
+          <h3>Private Events</h3>
+          <p>Divorce parties, retirement blowouts, boat parties, and anything else worth celebrating after dark.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RATES ================= -->
+<section class="section pt-0" id="rates">
+  <div class="container">
+    <span class="eyebrow">Rates</span>
+    <h2>Straightforward Pricing</h2>
+    <p class="lead-na mb-4">Rates vary by city, date, and show length — call for an exact quote. Typical bookings start at:</p>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card-na text-center">
+          <h3>Single Show</h3>
+          <div class="rate-price my-2">$300 <small>and up</small></div>
+          <p>One entertainer, full performance. Our most popular booking for suites and house parties.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-na text-center">
+          <h3>Two-Girl Show</h3>
+          <div class="rate-price my-2">$550 <small>and up</small></div>
+          <p>Double the energy with a coordinated duo performance — the bachelor party favorite.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-na text-center">
+          <h3>Extended &amp; Custom</h3>
+          <div class="rate-price my-2">Call <small>for quote</small></div>
+          <p>Longer shows, multiple performers, costumes and themes, or hosting for larger events.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NATIONWIDE DIRECTORY (signature section) ================= -->
+<section class="section directory" id="locations">
+  <div class="container">
+    <div class="choose-state">
+      <span class="eyebrow">Nationwide Coverage</span>
+      <h2>Choose Your State</h2>
+      <p class="lead-na mx-auto">Night Angels books entertainers in major cities across the country. Find your state below, then call with your city and date to check availability.</p>
+    </div>
+
+    <div class="row">
+      <!-- Column 1 -->
+      <div class="col-md-6 col-lg-4 state-col">
+        <div class="state-block">
+          <span class="state-name">Arizona Strippers</span>
+          <div class="state-cities"><span>Phoenix</span><span>Scottsdale</span><span>Tempe</span><span>Tucson</span><span>Mesa</span></div>
+        </div>
+        <div class="state-block">
+          <span class="state-name">California Strippers</span>
+          <div class="state-cities"><span>Los Angeles</span><span>San Diego</span><span>San Francisco</span><span>Sacramento</span><span>San Jose</span><span>Palm Springs</span></div>
+        </div>
+        <div class="state-block">
+          <span class="state-name">Colorado Strippers</span>
+          <div class="state-cities"><span>Denver</span><span>Colorado Springs</span><span>Boulder</span><span>Fort Collins</span><span>Breckenridge</span></div>
+        </div>
+        <div class="state-block">
+          <span class="state-name">Florida Strippers</span>
+          <div class="state-cities"><span>Miami</span><span>Orlando</span><span>Tampa</span><span>Fort Lauderdale</span><span>Jacksonville</span><span>Key West</span></div>
+        </div>
+        <div class="state-block">
+          <span class="state-name">Georgia Strippers</span>
+          <div class="state-cities"><span>Atlanta</span><span>Savannah</span><span>Augusta</span><span>Athens</span><span>Columbus</span></div>
+        </div>
+        <div class="state-block">
+          <span class="state-name">Hawaii Strippers</span>
+          <div class="state-cities"><span>Honolulu</span><span>Waikiki</span><span>Maui</span><span>Kona</span></div>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-md-6 col-lg-4 state-col">
+        <div class="state-block">
+          <span class="state-name">Illinois Strippers</span>
+          <div class="state-cities"><span>Chicago</span><span>Naperville</span><span>Springfield</span><span>Rockford</span><span>Peoria</span></div>
+        </div>
+        <div class="state-block">
+          <span class="state-name">Indiana Strippers</span>
+          <div class="state-cities"><span>Indianapolis</span><span>Fort Wayne</span><span>Bloomington</span><span>South Bend</span><span>Evansville</span></div>
+        </div>
+        <div class="state-block">
+          <span class="state-name">Louisiana Strippers</span>
+          <div class="state-cities"><span>New Orleans</span><span>Baton Rouge</span><span>Lafayette</span><span>Shreveport</span></div>
+        </div>
+        <div class="state-block">
+          <span class="state-name">New Jersey Strippers</span>
+          <div class="state-cities"><span>Atlantic City</span><span>Newark</span><span>Jersey City</span><span>Hoboken</span><span>Trenton</span></div>
+        </div>
+        <div class="state-block">
+          <span class="state-name">New York Strippers</span>
+          <div class="state-cities"><span>New York City</span><span>Brooklyn</span><span>Long Island</span><span>Buffalo</span><span>Albany</span><span>Rochester</span></div>
+        </div>
+        <div class="state-block">
+          <span class="state-name">North Carolina Strippers</span>
+          <div class="state-cities"><span>Charlotte</span><span>Raleigh</span><span>Asheville</span><span>Wilmington</span><span>Greensboro</span></div>
+        </div>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-md-6 col-lg-4 state-col">
+        <div class="state-block">
+          <span class="state-name">Ohio Strippers</span>
+          <div class="state-cities"><span>Columbus</span><span>Cleveland</span><span>Cincinnati</span><span>Dayton</span><span>Toledo</span></div>
+        </div>
+        <div class="state-block">
+          <span class="state-name">Oregon Strippers</span>
+          <div class="state-cities"><span>Portland</span><span>Eugene</span><span>Salem</span><span>Bend</span></div>
+        </div>
+        <div class="state-block">
+          <span class="state-name">Pennsylvania Strippers</span>
+          <div class="state-cities"><span>Philadelphia</span><span>Pittsburgh</span><span>Allentown</span><span>Harrisburg</span><span>Scranton</span></div>
+        </div>
+        <div class="state-block">
+          <span class="state-name">South Carolina Strippers</span>
+          <div class="state-cities"><span>Charleston</span><span>Myrtle Beach</span><span>Columbia</span><span>Greenville</span><span>Hilton Head</span></div>
+        </div>
+        <div class="state-block">
+          <span class="state-name">Texas Strippers</span>
+          <div class="state-cities"><span>Austin</span><span>Dallas</span><span>Houston</span><span>San Antonio</span><span>Fort Worth</span></div>
+        </div>
+        <div class="state-block">
+          <span class="state-name">Nevada Strippers</span>
+          <div class="state-cities"><span>Las Vegas</span><span>Reno</span><span>Henderson</span><span>Lake Tahoe</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-3">
+      <p class="text-grey mb-3">Don't see your city? We book surrounding areas in every state listed above.</p>
+      <a href="tel:+18005550199" class="btn btn-na">Call to Check Your City</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section" id="faq">
+  <div class="container" style="max-width:860px">
+    <span class="eyebrow">FAQ</span>
+    <h2 class="mb-4">Booking Questions</h2>
+    <div class="accordion accordion-na" id="faqAcc">
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true">How far in advance should I book?</button>
+        </h3>
+        <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAcc">
+          <div class="accordion-body">We recommend booking 1–2 weeks ahead for weekends, especially in major cities and during peak party seasons. Same-week and even same-day bookings are often possible — call and we'll check availability in your city.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">Where can the show take place?</button>
+        </h3>
+        <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+          <div class="accordion-body">Most shows are booked at hotel suites, private residences, and vacation rentals. We can also work with rented party rooms and private venues — just let us know the setup when you call.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">How does payment work?</button>
+        </h3>
+        <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+          <div class="accordion-body">A deposit confirms your booking, with the balance paid at the show. Tips for the entertainer are separate and always appreciated. We'll go over the full breakdown when you book.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4">Is this service for adults only?</button>
+        </h3>
+        <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAcc">
+          <div class="accordion-body">Yes. All guests must be 18 or older (21+ where required). Night Angels is adult entertainment for private, adults-only events.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact-band" id="contact">
+  <span class="eyebrow">Book Your Party</span>
+  <h2 class="display-font mb-3">One Call Books the Night</h2>
+  <p class="text-grey mb-4">Have your city, date, and headcount ready — we'll handle the rest.</p>
+  <a class="phone d-block mb-4" href="tel:+18005550199">(800) 555-0199</a>
+  <a href="tel:+18005550199" class="btn btn-na">Call Now</a>
+</section>
+
+<footer>
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+    <div>© 2026 Night Angels · High Class Strippers Service · 18+ Only</div>
+    <div>
+      <a href="#girls">Our Girls</a> · <a href="#services">Services</a> · <a href="#rates">Rates</a> · <a href="#locations">Locations</a> · <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Schema: nationwide adult entertainment service -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EntertainmentBusiness",
+  "name": "Night Angels",
+  "alternateName": "Night Angel Strippers",
+  "description": "High class strippers service booking professional female entertainers for bachelor parties, birthdays and private events nationwide.",
+  "url": "https://nightangelstrippers.com/",
+  "telephone": "+1-800-555-0199",
+  "priceRange": "$$",
+  "areaServed": [
+    {"@type":"State","name":"Arizona"},
+    {"@type":"State","name":"California"},
+    {"@type":"State","name":"Colorado"},
+    {"@type":"State","name":"Florida"},
+    {"@type":"State","name":"Georgia"},
+    {"@type":"State","name":"Hawaii"},
+    {"@type":"State","name":"Illinois"},
+    {"@type":"State","name":"Indiana"},
+    {"@type":"State","name":"Louisiana"},
+    {"@type":"State","name":"Nevada"},
+    {"@type":"State","name":"New Jersey"},
+    {"@type":"State","name":"New York"},
+    {"@type":"State","name":"North Carolina"},
+    {"@type":"State","name":"Ohio"},
+    {"@type":"State","name":"Oregon"},
+    {"@type":"State","name":"Pennsylvania"},
+    {"@type":"State","name":"South Carolina"},
+    {"@type":"State","name":"Texas"}
+  ]
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

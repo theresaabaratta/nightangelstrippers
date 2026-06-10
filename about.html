@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us | Night Angels – High Class Strippers Service Nationwide</title>
+<meta name="description" content="About Night Angels: a nationwide high class strippers service booking vetted, professional female entertainers for bachelor parties and private events in 18+ states.">
+<link rel="canonical" href="https://nightangelstrippers.com/about.html">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --na-black:#0b0a0c;
+  --na-panel:#141216;
+  --na-panel-2:#1b181d;
+  --na-red:#e01b2a;
+  --na-red-deep:#8f0f19;
+  --na-white:#f5f2f4;
+  --na-grey:#9b939e;
+  --na-line:rgba(245,242,244,.10);
+}
+html{scroll-behavior:smooth}
+body{
+  background-color:var(--na-black);
+  background-image:
+    radial-gradient(ellipse at 15% 0%, rgba(224,27,42,.06), transparent 45%),
+    radial-gradient(ellipse at 85% 100%, rgba(224,27,42,.05), transparent 45%),
+    repeating-linear-gradient(135deg, rgba(255,255,255,.012) 0 2px, transparent 2px 14px);
+  color:var(--na-white);
+  font-family:'Jost',sans-serif;
+  font-weight:300;
+  letter-spacing:.01em;
+}
+h1,h2,h3,.display-font{font-family:'Marcellus',serif;letter-spacing:.04em}
+a{color:var(--na-white)}
+.text-grey{color:var(--na-grey)}
+.text-red{color:var(--na-red)}
+
+/* ---------- Nav ---------- */
+.navbar{
+  background:rgba(11,10,12,.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--na-line);
+}
+.navbar .nav-link{
+  font-family:'Jost',sans-serif;font-weight:400;
+  letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;
+  color:var(--na-grey);padding:.9rem 1.1rem;
+}
+.navbar .nav-link:hover,.navbar .nav-link:focus{color:var(--na-white)}
+.navbar .nav-link.active{color:var(--na-red)}
+.brand-mark{font-family:'Marcellus',serif;font-size:1.45rem;letter-spacing:.06em;text-decoration:none}
+.brand-mark .w{color:var(--na-white)}
+.brand-mark .r{color:var(--na-red);text-shadow:0 0 18px rgba(224,27,42,.55)}
+.nav-phone{
+  border:1px solid var(--na-red);color:var(--na-white);border-radius:2px;
+  padding:.45rem 1.1rem;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;
+  text-decoration:none;transition:background .2s ease;
+}
+.nav-phone:hover{background:var(--na-red);color:#fff}
+
+/* ---------- Page header ---------- */
+.page-head{
+  padding:9rem 1rem 3.2rem;text-align:center;border-bottom:1px solid var(--na-line);
+}
+.page-head h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1}
+.page-head h1 .r{color:var(--na-red);text-shadow:0 0 26px rgba(224,27,42,.6)}
+.page-rule{
+  width:min(420px,70%);height:1px;margin:1.1rem auto .9rem;
+  background:linear-gradient(90deg,transparent,var(--na-white),transparent);
+}
+.page-tag{
+  font-weight:300;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--na-grey);font-size:clamp(.68rem,1.6vw,.95rem);
+}
+
+/* ---------- Buttons ---------- */
+.btn-na{
+  background:var(--na-red);color:#fff;border:1px solid var(--na-red);border-radius:2px;
+  font-family:'Jost',sans-serif;letter-spacing:.18em;text-transform:uppercase;
+  font-size:.8rem;padding:.75rem 1.7rem;
+}
+.btn-na:hover{background:var(--na-red-deep);border-color:var(--na-red-deep);color:#fff}
+.btn-na-ghost{
+  background:transparent;color:var(--na-white);border:1px solid rgba(245,242,244,.45);border-radius:2px;
+  font-family:'Jost',sans-serif;letter-spacing:.18em;text-transform:uppercase;
+  font-size:.8rem;padding:.75rem 1.7rem;
+}
+.btn-na-ghost:hover{border-color:#fff;color:#fff}
+
+/* ---------- Sections ---------- */
+.section{padding:4.5rem 0}
+.eyebrow{
+  display:inline-block;font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--na-red);margin-bottom:.8rem;
+}
+.section h2{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:1rem}
+.lead-na{color:var(--na-grey);font-weight:300;max-width:760px}
+
+/* ---------- Stat band ---------- */
+.stat-band{
+  background:var(--na-panel);
+  border-top:1px solid var(--na-line);
+  border-bottom:1px solid var(--na-line);
+  padding:2.6rem 0;
+}
+.stat{text-align:center}
+.stat .num{font-family:'Marcellus',serif;font-size:2.4rem;color:var(--na-white);line-height:1}
+.stat .num b{color:var(--na-red);font-weight:400}
+.stat .lbl{
+  color:var(--na-grey);font-size:.74rem;letter-spacing:.26em;text-transform:uppercase;margin-top:.5rem;
+}
+
+/* ---------- Cards & standards ---------- */
+.card-na{
+  background:var(--na-panel);border:1px solid var(--na-line);border-radius:3px;
+  height:100%;padding:1.8rem 1.6rem;
+  transition:border-color .2s ease, transform .2s ease;
+}
+.card-na:hover{border-color:rgba(224,27,42,.5);transform:translateY(-3px)}
+.card-na h3{font-size:1.12rem;margin-bottom:.6rem}
+.card-na p{color:var(--na-grey);font-size:.95rem;margin:0}
+
+.standard{
+  border-left:1px solid var(--na-line);padding:0 0 1.8rem 1.4rem;position:relative;
+}
+.standard:last-child{padding-bottom:0}
+.standard::before{
+  content:"";position:absolute;left:-5px;top:.35rem;width:9px;height:9px;border-radius:50%;
+  background:var(--na-red);box-shadow:0 0 12px rgba(224,27,42,.7);
+}
+.standard h3{font-size:1.05rem;margin-bottom:.3rem}
+.standard p{color:var(--na-grey);font-size:.95rem;margin:0}
+
+/* ---------- Photo frame ---------- */
+.about-photo{
+  border:1px solid var(--na-line);
+  box-shadow:0 24px 60px rgba(0,0,0,.6);
+}
+.about-photo img{width:100%;display:block}
+
+/* ---------- Pull quote ---------- */
+.brand-quote{
+  text-align:center;max-width:820px;margin:0 auto;padding:0 1rem;
+}
+.brand-quote p{
+  font-family:'Marcellus',serif;
+  font-size:clamp(1.3rem,3.4vw,2rem);
+  line-height:1.5;color:var(--na-white);
+}
+.brand-quote p .r{color:var(--na-red)}
+.brand-quote .rule{
+  width:120px;height:1px;margin:1.4rem auto 0;
+  background:linear-gradient(90deg,transparent,var(--na-red),transparent);
+}
+
+/* ---------- Contact band / footer ---------- */
+.contact-band{
+  background:
+    radial-gradient(ellipse at 50% 120%, rgba(224,27,42,.18), transparent 60%),
+    var(--na-panel-2);
+  border-top:1px solid var(--na-line);
+  text-align:center;padding:4.5rem 1rem;
+}
+.contact-band .phone{
+  font-family:'Marcellus',serif;font-size:clamp(1.8rem,5vw,3rem);
+  color:var(--na-white);text-decoration:none;
+}
+.contact-band .phone:hover{color:var(--na-red)}
+footer{border-top:1px solid var(--na-line);padding:2.2rem 1rem;color:var(--na-grey);font-size:.82rem}
+footer a{color:var(--na-grey);text-decoration:none}
+footer a:hover{color:var(--na-white)}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .card-na,.card-na:hover{transition:none;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+  <div class="container">
+    <a class="brand-mark" href="index.html"><span class="w">NIGHT</span><span class="r">ANGELS</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#girls">Our Girls</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#rates">Rates</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#locations">Locations</a></li>
+      </ul>
+      <a class="nav-phone d-none d-lg-inline-block" href="tel:+18005550199">Call (800) 555-0199</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= PAGE HEADER ================= -->
+<header class="page-head">
+  <h1>About <span class="r">Night Angels</span></h1>
+  <div class="page-rule"></div>
+  <div class="page-tag">High Class Strippers Service Since Day One</div>
+  <p class="lead-na mx-auto mt-3">A nationwide booking service built on three things: professional entertainers, straight answers on the phone, and shows that actually live up to the hype.</p>
+</header>
+
+<!-- ================= STAT BAND ================= -->
+<section class="stat-band">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-6 col-lg-3">
+        <div class="stat">
+          <div class="num">18<b>+</b></div>
+          <div class="lbl">States Covered</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="stat">
+          <div class="num">80<b>+</b></div>
+          <div class="lbl">Cities Served</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="stat">
+          <div class="num">100<b>%</b></div>
+          <div class="lbl">Vetted Entertainers</div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <div class="stat">
+          <div class="num">7 <b>Days</b></div>
+          <div class="lbl">Phone Booking</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OUR STORY ================= -->
+<section class="section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="eyebrow">Who We Are</span>
+        <h2>The Booking Service Behind the Best Nights Out (or In)</h2>
+        <p class="lead-na">Night Angels started with a simple observation: finding quality party entertainment shouldn't feel like a gamble. Too many guys have booked a "show" off a sketchy ad and ended up with a no-show, a bait-and-switch, or an awkward performance that killed the party instead of making it.</p>
+        <p class="lead-na">We built Night Angels to be the opposite of that. A real booking service with real coordinators, a vetted roster of professional female entertainers, and a standard for every show that goes out under our name. From the first phone call to the final song, the experience is handled.</p>
+        <p class="lead-na">Today we book entertainers in major cities across 18+ states — bachelor parties in Vegas and Miami, birthday surprises in Chicago and Atlanta, boat parties in Charleston and San Diego, and everything in between.</p>
+      </div>
+      <div class="col-lg-6">
+        <div class="about-photo">
+          <!-- Swap in licensed photo: images/about-main.jpg (portrait or 4:5 crop works best) -->
+          <img src="images/about-main.jpg" alt="Night Angels professional entertainer in studio portrait" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PULL QUOTE ================= -->
+<section class="section pt-0">
+  <div class="brand-quote">
+    <p>Every party gets one shot at being legendary.<br>We make sure the <span class="r">entertainment</span> isn't the weak link.</p>
+    <div class="rule"></div>
+  </div>
+</section>
+
+<!-- ================= OUR STANDARDS ================= -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <span class="eyebrow">Our Standards</span>
+        <h2>What "High Class" Actually Means Here</h2>
+        <p class="lead-na">It's on the logo, so we hold ourselves to it. Every entertainer and every booking runs through the same standards, in every city we serve.</p>
+        <a href="tel:+18005550199" class="btn btn-na mt-3">Book With Confidence</a>
+      </div>
+      <div class="col-lg-7">
+        <div class="standard">
+          <h3>Vetted, Experienced Performers</h3>
+          <p>Every entertainer on our roster is interviewed, experienced, and reviewed after bookings. If a performer doesn't hold the standard, she doesn't stay on the roster.</p>
+        </div>
+        <div class="standard">
+          <h3>On Time, Every Time</h3>
+          <p>Shows are confirmed in advance and entertainers arrive when scheduled. Your coordinator stays reachable the night of the event in case plans shift.</p>
+        </div>
+        <div class="standard">
+          <h3>Discreet Arrivals</h3>
+          <p>Entertainers arrive in regular street clothes and keep things low-key with neighbors, hotel staff, and anyone not on the guest list.</p>
+        </div>
+        <div class="standard">
+          <h3>Honest Pricing</h3>
+          <p>The rate quoted on the phone is the rate. No surprise fees at the door, no upsell pressure mid-show. Tips are always at your group's discretion.</p>
+        </div>
+        <div class="standard">
+          <h3>Adults-Only, Always</h3>
+          <p>We book private, adults-only events. All guests must be 18 or older — 21+ where required — no exceptions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY GUYS BOOK US ================= -->
+<section class="section pt-0">
+  <div class="container">
+    <span class="eyebrow">Why Night Angels</span>
+    <h2 class="mb-4">What Sets Us Apart</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card-na">
+          <h3>Nationwide Reach</h3>
+          <p>One number books entertainment in 80+ cities. Planning a destination bachelor party? We're already there.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card-na">
+          <h3>Real Coordinators</h3>
+          <p>You talk to a person, not a form. Your coordinator confirms details, answers questions, and handles changes.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card-na">
+          <h3>Shows Built to Order</h3>
+          <p>Single, duo, themed costumes, hostess hours — the show is shaped around your event, not the other way around.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card-na">
+          <h3>Repeat-Booking Reputation</h3>
+          <p>Most of our bookings come from referrals and repeat clients — best men who become next year's grooms.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact-band" id="contact">
+  <span class="eyebrow">Talk to a Coordinator</span>
+  <h2 class="display-font mb-3">Let's Plan Your Night</h2>
+  <p class="text-grey mb-4">See <a href="services.html">what we offer</a> and <a href="index.html#locations">where we book</a>, then call with your date.</p>
+  <a class="phone d-block mb-4" href="tel:+18005550199">(800) 555-0199</a>
+  <a href="tel:+18005550199" class="btn btn-na">Call Now</a>
+</section>
+
+<footer>
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+    <div>© 2026 Night Angels · High Class Strippers Service · 18+ Only</div>
+    <div>
+      <a href="about.html">About</a> · <a href="index.html#girls">Our Girls</a> · <a href="services.html">Services</a> · <a href="index.html#rates">Rates</a> · <a href="index.html#locations">Locations</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Schema: AboutPage + Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Night Angels",
+  "url": "https://nightangelstrippers.com/about.html",
+  "mainEntity": {
+    "@type": "EntertainmentBusiness",
+    "name": "Night Angels",
+    "alternateName": "Night Angel Strippers",
+    "url": "https://nightangelstrippers.com/",
+    "telephone": "+1-800-555-0199",
+    "description": "Nationwide high class strippers service booking vetted, professional female entertainers for bachelor parties, birthdays and private adults-only events in 18+ states.",
+    "slogan": "High Class Strippers Service",
+    "knowsAbout": ["Bachelor party entertainment","Birthday party shows","Private event entertainment","Boat party entertainment"]
+  }
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
